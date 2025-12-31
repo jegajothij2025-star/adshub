@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: adshub
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Product
+    username: postgres
+    password: 12345
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 30000
+      connection-timeout: 20000
+      max-lifetime: 1800000
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  elasticsearch:
+    uris: http://localhost:9200
+    username: super_admin
+    password: super_admin
+    connection-timeout: 5s
+    socket-timeout: 30s
+    ssl:
+       bundle:
+         jvm:
+           enabled: false
+
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+
+server:
+  port: 8081

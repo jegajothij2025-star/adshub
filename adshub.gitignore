@@ -1,0 +1,8 @@
+/target/
+*.log
+/.settings/
+/.classpath
+/.project
+application.properties
+application.yml
+.env
