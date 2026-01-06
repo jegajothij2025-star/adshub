@@ -4,7 +4,7 @@ public class DistrictRequestDTO {
 	
 	private String districtName;
 	private String districtCode;
-	private String stateId;
+	private Long stateId;
 	public String getDistrictName() {
 		return districtName;
 	}
@@ -17,10 +17,10 @@ public class DistrictRequestDTO {
 	public void setDistrictCode(String districtCode) {
 		this.districtCode = districtCode;
 	}
-	public String getStateId() {
+	public Long getStateId() {
 		return stateId;
 	}
-	public void setStateId(String stateId) {
+	public void setStateId(Long stateId) {
 		this.stateId = stateId;
 	}
 	

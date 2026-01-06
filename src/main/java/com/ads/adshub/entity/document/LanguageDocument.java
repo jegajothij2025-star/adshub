@@ -2,6 +2,7 @@ package com.ads.adshub.entity.document;
 
 import lombok.AllArgsConstructor;
 
+
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,14 +16,13 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Builder                // ✅ REQUIRED
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(indexName = "districts")
+@Document(indexName = "languages")
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class DistrictDocument {
+public class LanguageDocument {
 
     @Id
-    private String districtId;     // ✅ MUST be named id
+    private String languageId;     // ✅ MUST be named id
 
-    private String districtName;
-    private String districtCode;
-    private Long stateId;
+    private String languageName;
+    private String languageCode;
 }

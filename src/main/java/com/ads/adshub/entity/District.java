@@ -34,7 +34,7 @@ private String districtCode;
 
 @NotBlank
 @Column(name = "state_id", nullable = false, unique = true)
-private String stateId;
+private Long stateId;
 
 /*
  * public Long getDistrictId() { return districtId; }

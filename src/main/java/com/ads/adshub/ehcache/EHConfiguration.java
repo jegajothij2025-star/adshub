@@ -32,6 +32,9 @@ public class EHConfiguration {
         createCache(cacheManager, "countriesCache", String.class, Object.class, 100, 10, 10);
         createCache(cacheManager, "deviceosCache", String.class, Object.class, 100, 10, 10);
         createCache(cacheManager, "eduqualificationCache", String.class, Object.class, 100, 10, 10);
+        createCache(cacheManager, "languageCache", String.class, Object.class, 100, 10, 10);
+        createCache(cacheManager, "currencyCache", String.class, Object.class, 100, 10, 10);
+        createCache(cacheManager, "professionCache", String.class, Object.class, 100, 10, 10);
 
         return cacheManager;
     }

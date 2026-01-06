@@ -10,11 +10,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class DistrictResponseDTO {
+public class CurrencyResponseDTO {
 
-	private Long districtId;
-	private String districtName;
-	private String districtCode;
-	private Long stateId;
+	private Long currencyId;
+	
+	private String currencyName;
+    private String currencyCode;
+	
+	private Long countryId;
+	private String countryName;
+	private String countryCode;
 
 }

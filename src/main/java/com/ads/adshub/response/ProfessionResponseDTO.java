@@ -10,11 +10,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class DistrictResponseDTO {
+public class ProfessionResponseDTO {
 
-	private Long districtId;
-	private String districtName;
-	private String districtCode;
-	private Long stateId;
+	private Long professionId;
+	private String professionName;
 
 }

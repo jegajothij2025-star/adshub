@@ -10,6 +10,6 @@ public class CacheConfig {
 
     @Bean
     public CacheManager cacheManager() {
-        return new ConcurrentMapCacheManager("gendersCache", "districtsCache", "statesCache", "countriesCache", "deviceosCache");
+        return new ConcurrentMapCacheManager("gendersCache", "districtsCache", "statesCache", "countriesCache", "deviceosCache", "eduqualificationCache", "languageCache", "currencyCache", "professionCache");
     }
 }
